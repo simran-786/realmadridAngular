@@ -1,0 +1,32 @@
+
+    [
+        {
+    "firstname": "Sergio",
+    "lastname": "Ramos",
+    "Role": "Defender",
+    "TotalGoals": 100, 
+    "TotalAssists": 0, 
+    "TotalClearances": 0, 
+    "TotalInterceptions": 3, 
+    "TotalDribblesCreated": 2
+    },
+    {
+    "firstname": "Eden",
+    "lastname": "Hazard", 
+    "Role": "Forward", 
+    "TotalGoals": 2, 
+    "TotalAssists": 0, 
+    "TotalInterceptions": 0, 
+    "TotalDribblesCreated": 0
+    },
+    {
+    "firstname": "Karim", 
+    "lastname": "Benzema", 
+    "Role": "Forward", 
+    "TotalGoals": 255, 
+    "TotalAssists": 3, 
+    "TotalClearances": 6, 
+    "TotalInterceptions": 1, 
+    "TotalDribblesCreated": 11
+    }
+]

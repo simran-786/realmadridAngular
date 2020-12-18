@@ -1,0 +1,37 @@
+
+<div>
+    <br>
+    <mat-card>
+      <section class="mat-typography">
+        <h3>Add A New Player</h3>
+      </section>
+      <mat-divider></mat-divider>
+      <br>
+
+      <form [formGroup]="createForm" class="create-form">
+        <mat-form-field class="field-full-width">
+          <input matInput placeholder="First Name" formControlName="firstname" #firstname>
+          <!--<mat-error *ngIf="createForm.controls['title'].errors.required">
+            Title is <strong>required</strong>
+          </mat-error>-->
+        </mat-form-field>
+
+        <mat-form-field class="field-full-width">
+          <input matInput placeholder="Last name" formControlName="lastname" #lastname>
+        </mat-form-field>
+
+        <mat-form-field class="field-full-width">
+          <textarea matInput placeholder="Role" formControlName="Role" #Role></textarea>
+        </mat-form-field>
+
+        <mat-form-field class="field-full-width">
+            <textarea matInput placeholder="Total Goals" formControlName="TotalGoals" #TotalGoals></textarea>
+          </mat-form-field>
+
+        <mat-divider></mat-divider>
+        <br><br>
+        <button mat-raised-button color="accent" routerLink="/list">Back</button>&nbsp;
+        <button type="submit" (click)="addIssue(firstname.value, lastname.value, Role.value, TotalGoals.value)" [disabled]="createForm.pristine || createForm.invalid" mat-raised-button color="primary">Save</button>
+      </form>
+    </mat-card>
+  </div>
